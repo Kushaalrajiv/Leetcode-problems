@@ -25,4 +25,5 @@ def reverseLevelOrder(root):
                 queue.append(node.right)
             i+=1
         res.append(levels)
+        # we are appending multiple lists to result list , hence we need two loops to flatten it 
     return [val for j in reversed(res) for val in j]
